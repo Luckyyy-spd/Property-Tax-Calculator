@@ -44,5 +44,10 @@ jobs:
           java-version: '22'
           distribution: 'temurin'
       - name: Run the Ant jar target
-        run: ant -noinput -buildfile build-ci.xml jar
+        run: ant -noinput -buildfile build.xml jar
+      - name: Upload JAR file
+        uses: actions/upload-artifact@v4
+        with:
+          name: output-jar
+          path: build/jar/output.jar  # Adjust this path to where your JAR file is generated
 
