@@ -70,9 +70,4 @@
     nbproject/build-impl.xml file. 
 
     -->
-    <target name="compile">
-        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" target="11" source="11">
-            <include name="**/*.java"/>
-        </javac>
-    </target>
 </project>
